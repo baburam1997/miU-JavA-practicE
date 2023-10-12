@@ -16,11 +16,11 @@ public class isCentered {
     }
     public static void main(String[] args) {
         // int[] array = {1, 2, 3, 4, 5};
-        // int[] array = {3, 2, 1, 4, 5};
+        int[] array = {3, 2, 1, 4, 5};
         // int[] array = {3, 2, 1, 4, 1};
         // int[] array = {1, 2, 3, 4};
         // int[] array = {};
-        int[] array = {10};
+        // int[] array = {10}; 
         // Call the methods with arguments 
         int isCentered = isCenteredArray(array);
         System.out.println(isCentered);

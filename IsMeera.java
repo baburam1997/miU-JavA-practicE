@@ -9,18 +9,18 @@ public class IsMeera {
             if (array[i] == 9)
                 bool_9 = true;
         }
-        if ((!bool_1 && bool_9) || (bool_1 && !bool_9))
-            return 0;
+        if (bool_1 == bool_9)
+            return 1;
 
-        return 1;
+        return 0;
     }
 
     public static void main(String args[]) {
         // int[] array = { 7, 0, 1, 8, 9, 10 };
         // int[] array = {6,10,8};
         // int[] array = {7,6,1};
-        // int[] array = {9,10,0};
-        int[] array = {1,1,0,8,0,9,9,1};
+        int[] array = {9,10,0};
+        // int[] array = {1,1,0,8,0,9,9,1};
         System.out.println(isMeera(array));
     }
 }

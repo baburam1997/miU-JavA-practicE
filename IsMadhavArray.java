@@ -7,14 +7,14 @@ public class IsMadhavArray{
             int sum = 0;
             for (int i = 0; i < n; i++) {
                 if (index >= arr.length) {
-                    return 0;  // Array length is not valid for Madhav array
+                    return 0;
                 }
                 sum += arr[index];
                 index++;
             }
             
             if (sum != arr[0]) {
-                return 0;  // The sums are not equal
+                return 0;
             }
             
             n++;
@@ -24,14 +24,20 @@ public class IsMadhavArray{
     }
 
     public static void main(String[] args) {
-        int[] arr1 = {2, 1, 1};
-        int[] arr2 = {2, 1, 1, 4, -1, -1};
-        int[] arr3 = {6, 2, 4, 2, 2, 2, 1, 5, 0, 0};
-        int[] arr4 = {18, 9, 10, 6, 6, 6};
+        int[] array1 = {2, 1, 1};
+        int[] array2 = {2, 1, 1, 4, -1, -1};
+        int[] array3 = {6, 2, 4, 2, 2, 2, 1, 5, 0, 0};
+        int[] array4 = {18, 9, 10, 6, 6, 6};
+        int[] array5 = {-6, -3, -3, 8, -5, -4};
+        int[] array6 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, -2, -1};
+        int[] array7 = {3, 1, 2, 3, 0};
         
-        System.out.println(isMadhavArray(arr1)); // Output: 1
-        System.out.println(isMadhavArray(arr2)); // Output: 1
-        System.out.println(isMadhavArray(arr3)); // Output: 1
-        System.out.println(isMadhavArray(arr4)); // Output: 0
+        System.out.println(isMadhavArray(array1)); // Should return 1
+        System.out.println(isMadhavArray(array2)); // Should return 1
+        System.out.println(isMadhavArray(array3)); // Should return 1
+        System.out.println(isMadhavArray(array4)); // Should return 0
+        System.out.println(isMadhavArray(array5)); // Should return 0
+        System.out.println(isMadhavArray(array6)); // Should return 1
+        System.out.println(isMadhavArray(array7)); // Should return 0
     }
 }
